@@ -1,0 +1,64 @@
+/** @format */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* NAV-BAR */
+  #nav-bar nav {
+    gap: 0;
+  }
+  #nav-bar img {
+    display: none;
+  }
+  /* ABOUT */
+  #about .container {
+    padding: 0;
+  }
+
+  #about h1 {
+    font-size: 30px;
+    padding: 22px 0 18px;
+    color: #495057;
+  }
+
+  #target {
+    padding: 1rem 3rem 1rem 3rem;
+  }
+
+  /* Modify PERSONAL INFO */
+  #personal-info {
+    padding: 1rem 3rem 1rem 1rem;
+  }
+
+  #personal-info .icon {
+    height: 2rem;
+  }
+
+  #personal-info h1,
+  #personal-info .icon {
+    padding-left: 1.5rem;
+  }
+
+  /* Modify Certificiate */
+  #cert .item {
+    flex-direction: column;
+  }
+
+  /* Modify project */
+  #proj h3 {
+    font-size: 14px;
+  }
+  #proj .myrow,
+  #proj .myrow-1 {
+    font-size: 12px;
+    padding: 0.3rem;
+    gap: 5px;
+  }
+
+  #proj .myrow-1 span {
+    margin-right: 0;
+    padding: 0 0.2rem;
+  }
+
+  #job-info .row .col-md-6 {
+    width: 49%;
+  }
+}

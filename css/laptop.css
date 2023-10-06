@@ -1,0 +1,433 @@
+/** @format */
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+      MAIN COLOR: #4dabf7
+      GREY COLOR: #343a40
+      */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "et-line", sans-serif;
+  color: #868e96;
+}
+
+section > .container {
+  /* width: 100vw;
+  margin: auto;
+  display: block; */
+  padding: 30px 50px;
+}
+
+.bg-grey {
+  background-color: #f7f7f7;
+}
+
+/* Modify BANNER */
+#banner {
+  width: 100vw;
+  height: 40vh;
+
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(../images/IT_Background.jpg);
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#banner h1 {
+  font-weight: 300;
+  font-size: 48px;
+  padding-top: 24px;
+  color: white;
+}
+
+#banner span {
+  font-weight: 300;
+  font-size: 26px;
+  color: white;
+}
+
+/* Modify NAV*/
+#nav-bar nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 400px;
+}
+
+#nav-bar img {
+  position: absolute;
+  border: 8px solid white;
+  border-radius: 50%;
+  width: 300px;
+  height: auto;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 30px 10px;
+  border-left: 1px solid #dee2e6;
+  color: #495057;
+}
+
+#nav-bar i {
+  color: #4dabf7;
+  font-size: 18px;
+  padding: 30px 10px;
+}
+
+/* Modify ABOUT */
+#about .container {
+  padding: 0 50px 0;
+}
+
+#about .row {
+  align-items: stretch;
+}
+
+/* Modify TARGET */
+#target h1,
+#personal-info h1 {
+  font-size: 36px;
+  font-weight: 400;
+  padding: 44px 0 36px;
+  color: #495057;
+}
+
+#target {
+  background-color: #f7f7f7;
+  padding: 3rem 5rem 3rem 5rem;
+  text-align: justify;
+}
+
+#target p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #868e96;
+}
+#target span {
+  font-weight: bold;
+}
+
+/* Modify PERSONAL INFO */
+#personal-info {
+  background-color: #f1f3f5;
+  padding: 3rem 5rem 3rem 5rem;
+}
+
+#personal-info ul {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+#personal-info li {
+  margin-bottom: 25px;
+}
+
+#personal-info span {
+  color: #495057;
+  font-weight: 700;
+}
+
+#personal-info h1 {
+  padding-left: 2rem;
+}
+
+#personal-info i {
+  color: #199cdb;
+}
+
+/* Modify JOB INFO */
+/* #job-info .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90vw;
+  gap: 20px;
+} */
+
+#job-info .row {
+  justify-content: space-between;
+  row-gap: 1rem;
+}
+
+#job-info .row .col-xxl-4 {
+  border: 1px solid #dee2e6;
+  width: 32%;
+}
+
+.icon-dot {
+  font-size: 44px;
+  color: #4dabf7;
+}
+
+.time {
+  font-style: italic;
+  padding: 6px 0;
+}
+
+/* Modify EXP, ACTI, EDU */
+.column .title {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 10px 24px;
+}
+
+.column .title h1 {
+  font-size: 36px;
+  font-weight: 300;
+  padding: 24px 0 24px 0;
+  color: #495057;
+}
+
+.column h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #495057;
+  padding-top: 0.5rem;
+}
+
+.column .title i {
+  font-size: 60px;
+  color: #868e96;
+  padding-right: 16px;
+  justify-self: end;
+}
+
+#exp .myrow,
+#acti .myrow,
+#edu .myrow {
+  display: grid;
+  grid-template-columns: 62px 3fr;
+  /* grid-template-myrows: 20% 1fr 1fr; */
+}
+
+#exp .content,
+#acti .content,
+#edu .content {
+  grid-column: 2 / 5;
+  padding: 18px 36px 30px 0;
+  text-align: justify;
+}
+
+#exp .present {
+  background-color: #4dabf7;
+  color: white;
+  padding: 2px 10px 4px;
+  border-radius: 5px;
+}
+
+#exp ul,
+#acti ul,
+#edu ul {
+  list-style: none;
+  line-height: 1.7;
+  padding-left: 0;
+}
+
+/* Modify SKILL, LANG */
+#skill .myrow,
+#lang .myrow {
+  padding: 18px 24px;
+}
+
+#skill span,
+#lang span {
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin: 14px 24px 20px 0;
+  width: 40px;
+}
+
+#skill .gray,
+#lang .gray {
+  background: gray;
+  display: inline-block;
+  height: 3px;
+  margin: 14px 24px 20px 0;
+  width: 40px;
+}
+
+.skill-name {
+  color: #495057;
+}
+
+/* Modify HOBBY */
+#hobby .content {
+  margin: 10px 20px;
+}
+
+#hobby .content div {
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  padding: 8px 4px;
+}
+
+#hobby .content i {
+  font-size: 1.5rem;
+  color: #4dabf7;
+  border: 1px solid #4dabf7;
+  border-radius: 50%;
+  padding: 0.5rem 0.8rem 0.8rem 0.8rem;
+}
+
+/* Modify CERT, PROJ */
+/* #cert .container,
+#proj .container {
+  padding: 0 10vw 5vh;
+} */
+
+#cert .section-title,
+#proj .section-title {
+  padding: 5vh 0;
+}
+
+#cert h1,
+#proj h1 {
+  font-size: 36px;
+  color: #495057;
+  font-weight: 300;
+}
+
+/* Modify CERT */
+#cert .img-cc {
+  width: 250px;
+}
+
+#cert .content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 64px;
+}
+
+#cert .myrow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 48px;
+  gap: 16px;
+}
+
+#cert .item {
+  display: flex;
+  gap: 20px;
+}
+
+#cert .item-2 {
+  border-left: #d6c08d solid 1px;
+}
+
+#cert .item-3 {
+  border-top: #d6c08d solid 1px;
+  padding-top: 20px;
+}
+
+#cert h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #495057;
+  padding-bottom: 5px;
+}
+
+#cert span {
+  padding-top: 20px;
+}
+
+#cert ul {
+  list-style: none;
+  line-height: 1.7;
+  padding-left: 5px;
+}
+
+/* Modify PROJ */
+#proj .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+#proj img {
+  width: 100%;
+  height: 20rem;
+}
+
+#proj .myrow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid #868e96;
+  padding: 1rem;
+  gap: 10px;
+}
+
+#proj .myrow-1 {
+  border: 1px solid #868e96;
+  padding: 1rem;
+  width: 100%;
+}
+
+#proj .myrow-1 span {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+#proj h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #495057;
+  border: 1px solid #868e96;
+  padding: 1.5rem;
+  margin-bottom: 0;
+}
+
+#proj .year {
+  background-color: #4dabf7;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 18px;
+  justify-self: center;
+}
+
+#proj .no1 {
+  list-style: none;
+  grid-column: 2 / 5;
+}
+
+#proj .mota {
+  min-height: 100px;
+}
+
+#proj ul {
+  padding-left: 0;
+}
+
+/* Modify FOOTER */
+#footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#footer i {
+  font-size: 50px;
+  color: #4dabf7;
+}

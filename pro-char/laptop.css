@@ -1,0 +1,28 @@
+/** @format */
+@media (min-width: 1024px) {
+  #scopes .content {
+    width: 50%;
+  }
+  .box {
+    height: 450px;
+  }
+
+  .box-2 {
+    height: 350px;
+  }
+
+  #timeline-box {
+    height: 808px;
+  }
+
+  #timeline-box .content {
+    border-bottom-style: dashed !important;
+  }
+}
+
+.timeline {
+  background-color: blueviolet;
+  height: 46px;
+  width: 46px;
+  text-align: center;
+}

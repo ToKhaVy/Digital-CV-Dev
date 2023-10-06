@@ -1,0 +1,55 @@
+/** @format */
+
+@media (max-width: 768px) {
+  #nav-bar nav {
+    height: auto;
+    display: block;
+  }
+  #nav-bar img {
+    display: none;
+  }
+  #nav-bar a {
+    display: block;
+    padding: 10px;
+    border-left: none;
+    text-align: left;
+  }
+  #nav-bar i {
+    padding: 5px;
+  }
+  #about h1,
+  #about p,
+  #about ul,
+  #target,
+  #personal-info {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  #cert .item {
+    display: block;
+  }
+
+  #cert .img-cc {
+    margin-bottom: 2rem;
+  }
+
+  #cert .item-2 {
+    border-left: 0;
+    border-top: #d6c08d solid 1px;
+    padding-top: 20px;
+  }
+  #footer i {
+    font-size: 8vw;
+    color: #4dabf7;
+  }
+
+  #footer span {
+    font-size: 3vw;
+    margin: 4px 1vw 0 0;
+  }
+
+  #job-info .row .col-xxl-4 {
+    width: 100%;
+  }
+}

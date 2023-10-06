@@ -1,0 +1,10 @@
+/** @format */
+
+@media (max-width: 768px) {
+  #timeline-box .content {
+    border: none !important;
+  }
+  #timeline-box .d-flex {
+    border-bottom: 1px dashed #0dcaf0;
+  }
+}
